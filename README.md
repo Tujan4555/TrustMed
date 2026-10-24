@@ -77,3 +77,48 @@ This research prototype is not intended for diagnosis, treatment selection, intr
 ## Environment
 
 The code was developed in a Kaggle/PyTorch environment. See `requirements.txt` for a minimal dependency list. Exact environment and preprocessing reproducibility have not yet been established.
+
+
+## Running inference
+
+The repository includes `src/run_inference.py` for scoring preprocessed
+waveform windows with the saved E5 checkpoint.
+
+### Input requirements
+
+Provide a NumPy `.npy` array with shape `(N, 3, 3000)` and `float32` values.
+The channel order must be:
+
+1. ART
+2. ECG-II
+3. PLETH
+
+The input must already follow the same preprocessing and normalization
+used during training. This repository does not yet include a verified
+standalone raw-signal preprocessing or label-generation pipeline.
+
+### Example
+
+From the repository root:
+
+    python -m pip install -r requirements.txt
+
+    python src/run_inference.py \
+      --input-npy /path/to/preprocessed_windows.npy \
+      --checkpoint checkpoints/e5_best.pt \
+      --output-csv trustmed_predictions.csv \
+      --batch-size 64 \
+      --device auto
+
+The output CSV contains `window_index` and `risk_score`. Scores are sigmoid
+outputs from the model and have not been established as calibrated clinical
+probabilities. The script does not generate clinical labels or treatment
+recommendations.
+
+### Inference smoke test
+
+A smoke test on eight windows from an available preprocessed array completed
+successfully on CUDA and returned finite scores. The provenance and exact
+preprocessing equivalence of that array to the original held-out test set
+have not been established. This is not an end-to-end reproduction of the
+reported test metrics.

@@ -1,0 +1,2 @@
+test_windows,test_cases,positive_label_prevalence,auprc,auroc,threshold,alert_rate,alert_windows,precision,recall,f1,negative_label_alert_rate,cases_with_positive_labels,positive_label_cases_with_any_alert,cases_without_positive_labels_with_any_alert
+150760,486,0.03314539665693818,0.25636224833059784,0.8807736093670775,0.6,0.06772353409392412,10210,0.25582761998041137,0.5227136281769061,0.3435260077595844,0.05212571091429238,176,176,154

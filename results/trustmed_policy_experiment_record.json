@@ -1,0 +1,65 @@
+{
+  "project": "TrustMed",
+  "experiment": "E5 frozen risk model with alert-policy comparison",
+  "recorded_utc": "2026-10-24T08:54:23.171101+00:00",
+  "e5_checkpoint": "/kaggle/working/trustmed_e5_run/checkpoints/e5_best.pt",
+  "e5_frozen": true,
+  "primary_policy": {
+    "type": "threshold",
+    "alert_threshold": 0.6,
+    "validation_alert_rate": 0.0753,
+    "validation_positive_label_recall": 0.5254,
+    "validation_positive_label_precision": 0.2578,
+    "validation_negative_label_alert_rate": 0.058
+  },
+  "alternative_policy": {
+    "type": "threshold",
+    "alert_threshold": 0.65,
+    "validation_alert_rate": 0.0618,
+    "validation_positive_label_recall": 0.4684,
+    "validation_positive_label_precision": 0.2798,
+    "validation_negative_label_alert_rate": 0.0462
+  },
+  "q_learning_experiment": {
+    "status": "not selected",
+    "episodes": 5,
+    "validation_alert_rate": 0.3132,
+    "validation_positive_label_recall": 0.8385,
+    "validation_positive_label_precision": 0.0989,
+    "reason": "Excessive alert burden and inconsistent action preferences"
+  },
+  "validation_cases": 472,
+  "test_evaluation": "not yet performed",
+  "limitations": [
+    "Original label-generation definition is unavailable.",
+    "Metrics measure agreement with dataset labels, not verified clinical events.",
+    "Thresholds are provisional engineering settings, not clinical recommendations.",
+    "No clinical benefit or hypotension prevention has been demonstrated."
+  ],
+  "final_test_evaluation": {
+    "completed": true,
+    "evaluated_at_utc": "2026-10-24T09:01:52.989665+00:00",
+    "checkpoint": "/kaggle/working/trustmed_e5_run/checkpoints/e5_best.pt",
+    "model_frozen": true,
+    "threshold_selected_on_test_set": false,
+    "metrics": {
+      "test_windows": 150760.0,
+      "test_cases": 486.0,
+      "positive_label_prevalence": 0.0331453966569381,
+      "auprc": 0.2563622483305978,
+      "auroc": 0.8807736093670775,
+      "threshold": 0.6,
+      "alert_rate": 0.0677235340939241,
+      "alert_windows": 10210.0,
+      "precision": 0.2558276199804113,
+      "recall": 0.5227136281769061,
+      "f1": 0.3435260077595844,
+      "negative_label_alert_rate": 0.0521257109142923,
+      "cases_with_positive_labels": 176.0,
+      "positive_label_cases_with_any_alert": 176.0,
+      "cases_without_positive_labels_with_any_alert": 154.0
+    },
+    "label_semantics_verified": false,
+    "interpretation": "Metrics measure agreement with the available dataset labels. The original label-generation rule has not been verified."
+  }
+}

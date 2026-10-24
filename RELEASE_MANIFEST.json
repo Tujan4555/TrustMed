@@ -1,0 +1,82 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 298,
+    "sha256": "47b47c7b3aa8f95a574a890d481e2948f42588bff6fb1fb3c197a2730e8bab06"
+  },
+  {
+    "path": "README.md",
+    "bytes": 3939,
+    "sha256": "4e8ac7366325a22c75354193ef578d249aa4e8f479b61be12f33542be5aed617"
+  },
+  {
+    "path": "requirements.txt",
+    "bytes": 32,
+    "sha256": "d44edcf3e6d125b1c3e4eca0fd838f79814bc84a275cb89c1f36b9c102bd8c30"
+  },
+  {
+    "path": "src/e5_model_architecture.py",
+    "bytes": 2424,
+    "sha256": "c609d26f205e2333717b6b7db7a0e8fd713bf449b3e11481e054c1e90dadae04"
+  },
+  {
+    "path": "src/e5_training_engine.py",
+    "bytes": 2640,
+    "sha256": "22078c8b713f09fadb75acc194044603b80023d0db9d67858de4adcc51a15df1"
+  },
+  {
+    "path": "checkpoints/e5_best.pt",
+    "bytes": 4229982,
+    "sha256": "61bc74d1e6dd8ffc186b768f3feff3a934778a6f41efc124fc8021199e9d6c6c"
+  },
+  {
+    "path": "reports/trustmed_xai_analysis_report.md",
+    "bytes": 22784,
+    "sha256": "6ac118592d0034d26c4417490dfc3d249327eef0aabfd6fcac57acc2bd2181c9"
+  },
+  {
+    "path": "results/e5_test_final_metrics.csv",
+    "bytes": 441,
+    "sha256": "205711dc4b09b3b4bb0838b1bc4942ef3c4d963f857002410755fd0c620acc11"
+  },
+  {
+    "path": "results/trustmed_policy_experiment_record.json",
+    "bytes": 2545,
+    "sha256": "bf9397d95b6bffa3a15f1f5e0d84a48d385d15c177d8ca2d277c832397dce175"
+  },
+  {
+    "path": "results/xai_60_channel_sensitivity_bootstrap_ci.csv",
+    "bytes": 1105,
+    "sha256": "d333ff2cdbcfed746243d6c26d76a5de19974f803b2e63051d3768a58c76adae"
+  },
+  {
+    "path": "results/xai_60_channel_sensitivity_summary.csv",
+    "bytes": 1686,
+    "sha256": "fa3b01e54d84a704f25a7fd6bae206710d9b034be695867e80e5be9cfcbde854"
+  },
+  {
+    "path": "results/xai_group_comparison.csv",
+    "bytes": 635,
+    "sha256": "bc6e396950db22fbcbfc00c153fd005c8f1a42b03b60bed37dd22488fd540a13"
+  },
+  {
+    "path": "results/xai_ig_convergence.csv",
+    "bytes": 2582,
+    "sha256": "cbaa798cbf164a723a3ff64f5b909fdf27ae96b606904e1d4ced3071a2070fba"
+  },
+  {
+    "path": "results/xai_integrated_gradients_summary.csv",
+    "bytes": 1469,
+    "sha256": "df0c9bcd9bd41aeaaf0f635080ed6bc42c104b999f53cfdb7d71e7a2153e0ee9"
+  },
+  {
+    "path": "results/xai_paired_channel_bootstrap.csv",
+    "bytes": 1619,
+    "sha256": "1e45ab5498a71d91409cc11525530a8b24c1c5d2fe04aa9992f70db9b67ce970"
+  },
+  {
+    "path": "results/xai_temporal_concentration.csv",
+    "bytes": 421,
+    "sha256": "680003bd7064326eb348ea3ecbde432603ac0a046a1a429b2d5c3309789d70fb"
+  }
+]

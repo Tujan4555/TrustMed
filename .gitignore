@@ -1,0 +1,25 @@
+# Data and private material
+data/
+datasets/
+raw_data/
+patient_data/
+*.parquet
+*.h5
+*.hdf5
+*.npz
+
+# Local environments and secrets
+.env
+.env.*
+*token*
+*secret*
+venv/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Temporary outputs and local backups
+*.tmp
+*.log
+*_backup.zip
+trustmed_final_artifacts.zip
